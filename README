@@ -1,7 +1,6 @@
 #This is a python script that takes a text input 'hello world' 
 #and converts the text into tokens using the GPT2 architecture: [31373, 995]
-
-#It also shows the relationship between text and their respective tensor token 
+#It also shows the relationship between text and it's respective tensor token 
 #Text: Tensor Token 
 #  hello: 31373
 #  world: 995
