@@ -1,3 +1,9 @@
+#DEPENDENCIES REQUIRED TO RUN THIS SCRIPT
+pip install transformers
+pip install torch
+
+#WHAT THIS PYTHON SCRIPT DOES:
+
 #This is a python script that takes a text input 'hello world' 
 #and converts the text into tokens using the GPT2 architecture: [31373, 995]
 #It also shows the relationship between text and it's respective tensor token 
@@ -5,3 +11,12 @@
 #  hello: 31373
 #  world: 995
 
+#TECNICAL DESCRIPTION
+
+In this script, the transformers.GPT2Tokenizer.from_pretrained('gpt2') line loads the GPT-2 tokenizer. 
+The tokenizer.encode() function is then used to convert the text into numerical tokens. 
+The return_tensors argument specifies that the output should be a PyTorch tensor, but you can also choose to return a list of integers if desired. 
+The output of the tokenization process is a tensor of numerical tokens that represent the relationship between words in the input text.
+
+The other part of the script script demonstrates how the relationship between the words in the input text and the tokens
+they are represented by can be observed by converting the tokens back to their corresponding words using the tokenizer.convert_ids_to_tokens() function.
