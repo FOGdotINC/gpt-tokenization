@@ -1,0 +1,7 @@
+This is a python script that takes a text input 'hello world' and converts the text into tokens: [31373, 995]
+
+It also shows the relationship between text and their respective tensor token 
+Text: Tensor Token {
+  hello: 31373
+  world: 995
+}
